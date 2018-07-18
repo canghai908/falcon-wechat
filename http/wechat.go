@@ -5,7 +5,6 @@ import (
 	"github.com/toolkits/web/param"
 	"gopkg.in/chanxuehong/wechat.v1/corp"
 	"gopkg.in/chanxuehong/wechat.v1/corp/message/send"
-	"log"
 	"net/http"
 	"strings"
 )
