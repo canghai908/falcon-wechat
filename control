@@ -72,7 +72,6 @@ function build() {
     if [ $? -ne 0 ]; then
         exit $?
     fi
-    mv $module $app
     ./$app -v
 }
 
