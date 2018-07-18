@@ -5,6 +5,7 @@ import (
 	"github.com/toolkits/web/param"
 	"gopkg.in/chanxuehong/wechat.v1/corp"
 	"gopkg.in/chanxuehong/wechat.v1/corp/message/send"
+	"log"
 	"net/http"
 	"strings"
 )
@@ -31,6 +32,7 @@ func configProcRoutes() {
 		clt := send.NewClient(TokenServer, nil)
 		if _, err := clt.SendText(body); err != nil {
 			http.Error(w, err.Error(), http.StatusInternalServerError)
+			log.Println(err)
 		} else {
 			http.Error(w, "success", http.StatusOK)
 		}
