@@ -1,0 +1,12 @@
+{
+	"debug": true,
+	"http": {
+		"listen": "0.0.0.0:9527",
+		"token": ""
+	},
+	"wechat": {
+        "corpid": "wxa7c63522727b6bf0",
+        "secret": "PkAmeOOITFs_Vjx0hxjZDqwtbHfWPBnJ3R2WRrCWtpM",
+        "agentid": 1
+    }
+}
