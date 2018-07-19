@@ -5,7 +5,7 @@
 		"token": ""
 	},
 	"wechat": {
-        "corpid": "wxa7c63522727b6bf0",
+		"corpid": "wxa7c63522727b6bf0",
         "secret": "d5S-_XGVd-5HA0o9bkvMMK5Wh1qwCC-YQei4WcL9hSM",
         "agentid": 1
     }
