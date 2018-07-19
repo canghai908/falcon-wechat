@@ -15,8 +15,8 @@ Open-Falcon微信告警组件
 ##  部署Falcon-wechat
  Falcon-wechat可部署在Falcon-Alarm机器，也可部署在独立机器，使用以下命令部署
 ```bash
- mkdir -p /usr/loca/falcon-wechat
- cd /usr/loca/falcon-wechat
+ mkdir -p /usr/local/falcon-wechat
+ cd /usr/local/falcon-wechat
  wget https://dl.cactifans.com/open-falcon/falcon-wechat-0.0.1.tar.gz
  tar zxvf falcon-wechat-0.0.1.tar.gz
 ```
