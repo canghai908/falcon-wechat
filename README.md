@@ -1,5 +1,9 @@
 Open-Falcon微信告警组件
 ---------------------------------------------------
+在此
+感谢 @laiwei 的https://github.com/open-falcon/mail-provider 项目代码自持
+感谢 @chanxuehong 老司机的微信SDK支持
+
 ##  申请微信企业号
 在https://work.weixin.qq.com/ 注册微信企业号，不需要认证即可
 ### 配置企业号
