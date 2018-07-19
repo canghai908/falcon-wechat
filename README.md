@@ -57,6 +57,7 @@ Open-Falcon微信告警组件
 	"im": "http://127.0.0.1:9527/wechat",
 ```
 >如果你修改了falcon-wechat的默认端口，请注意修改。如falcon-wechat和Alarm组件为不同机器，注意修改IP地址。
+修改之后重启Alarm服务，使其生效
 ### 配置IM信息
 在Dashboard里，为用户配置IM账号为户**用户账号**！**用户账号**！
 **用户账号** 不是微信号，重要事情说三遍！
