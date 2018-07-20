@@ -1,7 +1,9 @@
 Open-Falcon微信告警组件
 ---------------------------------------------------
-在此
-感谢 @laiwei 的https://github.com/open-falcon/mail-provider 项目代码支持		
+在此      
+
+感谢 @laiwei 的https://github.com/open-falcon/mail-provider 项目代码支持
+
 感谢 @chanxuehong 老司机的微信SDK支持  
 
 ##  申请微信企业号
@@ -49,22 +51,26 @@ curl -d "tos=zhanghao&content=内容" "http://127.0.0.1:9527/wechat"
 >tos 后面为用户账号
 >content 后面为内容
 
-如看到success表示发送成功，如遇到错误可使用以下命令查看日志
-查看日志
+如看到success表示发送成功，如遇到错误可使用以下命令查看日志   
+
 
 ```
 ./control tail
 ```
-如看到以下信息表示成功
+如看到以下信息表示成功  
 >2018/07/19 14:44:28 config.go:64: load configuration file cfg.json successfully
 2018/07/19 14:44:28 http.go:25: http listening 0.0.0.0:9527
 
 常用命令
 
->./control start 启动程序     
->./control stop  停止程序     
->./control build 从源码编译程序     
->./control pack  打包程序   
+>./control start 启动程序  
+
+>./control stop  停止程序  
+
+>./control build 从源码编译程序   
+
+>./control pack  打包程序       
+
 
 ##  配置Open-Falcon
 ### 配置Alarm组件
@@ -76,16 +82,22 @@ curl -d "tos=zhanghao&content=内容" "http://127.0.0.1:9527/wechat"
 修改之后重启Alarm服务，使其生效
 ### 配置IM信息
 在Dashboard里，为用户配置IM账号为户**用户账号**！**用户账号**！
-**用户账号** 不是微信号，重要事情说三遍！
+**用户账号** 不是微信号，重要事情说三遍！     
+
 ![3](https://img.cactifans.com/wp-content/uploads/2018/07/3.jpg)
-用户账号
+用户账号    
+
 ![4](https://img.cactifans.com/wp-content/uploads/2018/07/4.jpg)
-## 效果
-告警
+## 效果   
+
+告警      
+
 ![5](https://img.cactifans.com/wp-content/uploads/2018/07/5.jpg)
-微信
+微信      
+
 ![6](https://img.cactifans.com/wp-content/uploads/2018/07/6.png)
 
 ##  注意事项
-1.由于使用企业微信发送消息接口实现，接口调用速率有限制。注意控制消息发送频率，目前每次发消息都会请求一次Access_token，后续优化。
+1.由于使用企业微信发送消息接口实现，接口调用速率有限制。注意控制消息发送频率，目前每次发消息都会请求一次Access_token，后续优化。     
+
 2.由于未认证企业发送消息数量与人员有关，建议控制频率。具体查看官网API文档https://work.weixin.qq.com/api/doc#10785
