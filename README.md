@@ -42,14 +42,27 @@ Open-Falcon微信告警组件
 启动信息
 >falcon-wechat started..., pid=13875
 
+启动之后可使用以下命令测试是否成功
+```bash
+curl -d "tos=zhanghao&content=内容" "http://127.0.0.1:9527/wechat"
+```
+>tos 后面为用户账号
+>content 后面为内容
+如看到success表示发送成功，如遇到错误可使用以下命令查看日志
 查看日志
-
+```./control tail
 ```
-./control tail
-```
-如看到以下信息表示启动成功
+如看到以下信息表示成功
 >2018/07/19 14:44:28 config.go:64: load configuration file cfg.json successfully
 2018/07/19 14:44:28 http.go:25: http listening 0.0.0.0:9527
+
+常用命令
+
+>./control start 启动程序
+>./control stop  停止程序
+>./control build 从源码编译程序
+>./control pack  打包程序
+
 ##  配置Open-Falcon
 ### 配置Alarm组件
 修改Open-Falcon的Alarm组件config目录下的配置文件cfg.json，将IM段修改为以下内容
