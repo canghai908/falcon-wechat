@@ -48,7 +48,8 @@ Open-Falcon微信告警组件
 ```bash
 curl -d "tos=zhanghao&content=内容" "http://127.0.0.1:9527/wechat"
 ```
->tos 后面为用户账号
+>tos 后面为用户账号  
+
 >content 后面为内容
 
 如看到success表示发送成功，如遇到错误可使用以下命令查看日志   
